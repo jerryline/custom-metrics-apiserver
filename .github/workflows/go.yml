@@ -34,8 +34,6 @@ jobs:
       uses: ShiftLeftSecurity/scan-action@master
       with:
         type: "credscan,depscan,go"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GHE_TOKEN }}
     - name: upload artifact
       uses: actions/upload-artifact@v1
       with:
