@@ -31,7 +31,7 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: Security and Licence Scan
-      uses: RnD-IT/license-scan@master
+      uses: ShiftLeftSecurity/scan-action@master
       with:
         type: "credscan,depscan,go"
       env:
